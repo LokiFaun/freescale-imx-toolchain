@@ -40,7 +40,9 @@
 #define SPI_LSB_FIRST		0x08
 #define SPI_3WIRE		0x10
 #define SPI_LOOP		0x20
+#ifndef SPI_NO_CS       // allow cmdline override since spi_mxs does not support
 #define SPI_NO_CS		0x40
+#endif
 #define SPI_READY		0x80
 
 /*---------------------------------------------------------------------------*/
